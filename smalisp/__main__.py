@@ -1,6 +1,5 @@
 import logging
 import urllib.request
-from importlib.metadata import version as get_version
 from pathlib import Path
 
 import yaml
@@ -62,7 +61,7 @@ def initialize(params: types.InitializeParams) -> types.InitializeResult:
                 resolve_provider=False, trigger_characters=[]
             )
         ),
-        server_info=types.ServerInfo(name="smals", version=get_version("smals")),
+        server_info=types.ServerInfo(name="smals", version="0.1.0"),
     )
 
 
