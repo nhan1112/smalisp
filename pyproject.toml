@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smalisp"
+version = "0.1.0"
+description = "A very simple language server for smali"
+authors = [{ name = "Abhi" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [ "pygls", "PyYAML"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+homepage = "https://github.com/AbhiTheModder/smalis.git"
+source = "https://github.com/AbhiTheModder/smalis.git"
+issues = "https://github.com/AbhiTheModder/smalis/issues"
+
+[project.optional-dependencies]
+dev = [ "ruff" ]
+
+[project.scripts]
+smalisp = "smalisp.__main__:main"
+
+[tool.setuptools.package-data]
+smalisp = ["grammar.yaml"]
+
+[tool.setuptools]
+packages = [ "smalisp" ]
