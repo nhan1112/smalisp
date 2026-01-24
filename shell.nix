@@ -80,6 +80,7 @@ pkgs.mkShell {
     pkg-config
     openssl
     dbus
+    nodejs
   ];
   nativeBuildInputs = with pkgs; [
     pkg-config

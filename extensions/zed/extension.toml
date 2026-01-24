@@ -2,7 +2,7 @@ id = "smalisp"
 name = "Smalisp"
 version = "0.1.0"
 schema_version = 1
-authors = ["Abhi <allinoneallinone00@gmail.com>"]
+authors = ["Abhi <abhi@revengi.in>"]
 description = "Smali language support for zed"
 repository = "https://github.com/AbhiTheModder/smalisp.git"
 
