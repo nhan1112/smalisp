@@ -33,16 +33,29 @@ Reference: https://zed.dev/docs/extensions/developing-extensions#developing-an-e
 
 Note: These dev extensions are not yet officially accepted in the Zed extension registry; acceptance is expected soon.
 
-### VSCode Extension (Local Development)
+### VSCode Extension
 Prerequisites: VSCode installed.
 
 - Extension path: `extensions/vscode`.
+- [Marketplace](https://marketplace.visualstudio.com/items?itemName=qbtaumai.smalisp)
 
+**Option 1: Install from Marketplace**
+1. Open VSCode Extensions view (Ctrl+Shift+X)
+2. Search for "smalisp"
+3. Click Install
+
+OR,
+Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
+```
+ext install qbtaumai.smalisp
+```
+
+Alternatively, run `code --install-extension qbtaumai.smalisp` from the terminal.
+
+**Option 2: Local Development**
 1. Build or obtain the VSIX package for the extension from the releases page of this repository.
 2. In VSCode, go to Extensions view, click the three-dot menu, choose Install from VSIX..., and select the downloaded `.vsix` file.
 3. Alternatively, run `code --install-extension path/to/extension.vsix` from the terminal.
-
-Note: The VSCode extension is not yet published in the official VSCode Marketplace; use local VSIX for testing.
 
 
 ### Helix
