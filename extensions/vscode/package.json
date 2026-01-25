@@ -4,7 +4,7 @@
   "description": "Smali language support for vscode",
   "version": "0.1.0",
   "repository": "https://github.com/AbhiTheModder/smalisp",
-  "publisher": "Abhi",
+  "publisher": "qbtaumai",
   "engines": {
     "vscode": "^1.105.0"
   },
